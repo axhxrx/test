@@ -1,10 +1,30 @@
 {
   "name": "@axhxrx/test",
-  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/mod.ts"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=24.2.0"
+  },
   "devDependencies": {
+    "@std/testing": "npm:@jsr/std__testing",
+    "@std/expect": "npm:@jsr/std__expect",
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "dprint check && deno check && deno lint && bun tsc --noEmit",
+    "fix": "dprint fmt && deno lint --fix",
+    "test": "bun test && deno test && node --test"
   }
 }
