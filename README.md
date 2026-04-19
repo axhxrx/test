@@ -72,3 +72,9 @@ Workaround: run Node tests with `--test-isolation=none` (everything runs in one 
 ## License
 
 MIT
+
+## Happenings
+
+- 2026-04-19 🧃 0.1.1 — _juice_ that JSR score... 90% more documented symbols!
+
+- 2026-04-19 📦 0.1.0 — initial implementation of small hack for @std-only cross-runtime tests
